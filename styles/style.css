@@ -36,3 +36,241 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 1fr;
+  grid-template-rows: 534px;
+  column-gap: 30px;
+  padding-block: 133px;
+  padding-inline: 30px;
+}
+
+.result {
+  display: grid;
+  grid-template-rows: 1fr 54px;
+  align-items: end;
+  row-gap: 16px;
+}
+
+.result__video-container {
+  inline-size: 100%;
+  block-size: 386px;
+  position: relative;
+}
+
+.result__video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  block-size: 100%;
+  display: grid;
+  grid-template-columns: 225px 1fr 194px;
+  column-gap: 40px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-block-end: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search-form__textfield {
+  inline-size: 100%;
+  background-color: transparent;
+  border: none;
+  border-block-start: 1px solid #fff;
+  border-block-end: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  appearance: none;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #FFF;
+}
+
+.search-form__label {
+  
+}
+
+.search-form__label:hover {
+  
+}
+
+.search-form__checkbox-list {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 15px;
+}
+
+.search-form__checkbox:checked + span {
+  background-color: #fff;
+  background-position: 1px 1px 1px 1px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  inline-size: 19px;
+  block-size: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  cursor: pointer;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.button {
+  min-block-size: 34px;
+  background-color: transparent;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #FFF;
+  align-self: self-end;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.more-button {
+  inline-size: 100%;
+}
+
+.content__details {
+  display: grid;
+  grid-template-rows: 236px 298px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__list-item {
+  padding-block-end: 30px;
+}
+
+/* .content__list-item:nth-last-of-type() {
+  padding-block-end: 0;
+} */
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 194px;
+  grid-template-rows: 107px;
+}
+
+.content__video-card-description-container {
+  inline-size: 100%;
+}
+
+.content__video-card-description-container:active {
+  background-color: #545050;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-block-start: 4px;
+  padding-block-end: 6px;
+}
+
+.content__video-card-title:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-title:active {
+  text-decoration: none;
+}
+
+.content__video-card-description {
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
+.content__video-card-description:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-description:active {
+  text-decoration: none;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  /* inline-size: 194px;
+  block-size: 107px; */
+}
