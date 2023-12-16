@@ -11,7 +11,8 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  display: flex;
+  margin: 0 auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -38,8 +39,9 @@ ol {
 }
 
 .content {
+  align-content: center;
   display: grid;
-  grid-template-columns: 711px 1fr;
+  grid-template-columns: 711px 399px;
   grid-template-rows: 534px;
   column-gap: 30px;
   padding-block: 133px;
